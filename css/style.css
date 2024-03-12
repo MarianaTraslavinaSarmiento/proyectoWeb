@@ -12,45 +12,43 @@
 body{
 
     width: 100%;
-    height: auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(5, 80vh);
+    height: auto;
+    grid-template: 100px repeat(5, 80vh) 400px /1fr;
     background-color: var(--color-background)
 
 }
 
-.home header{
+header{
 
     display: flex;
     justify-content: space-between;
-    border: 2px solid white;
     align-items: center;
-    padding-left: 100px
+    padding-left: 60px
 
 }
 
-.home header h1{
-    font-size: 3.5em;
-    color: var(--color-orange);
+header h1{
+    font-size: 3em;
+    color: var(--color-naranja);
 }
 
-.home header nav{
+header nav{
 
     padding-right: 30px;
 }
-.home header nav ul li{
+header nav ul li{
 
     display: flex;
     list-style: none;
     width: 30vw;
     justify-content: center;
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--color-white);
     cursor: pointer;
 }
 
-.home nav ul{
+nav ul{
 
     display: flex;
     height: 100px;
@@ -59,5 +57,51 @@ body{
 
 }
 
+/* Primera seccion -  */
 
+
+.home .fullWebsite{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fullWebsite .textBox__fullWebsite{
+    width: 35%;
+    height: 50%;
+}
+
+.home .fullWebsite .textBox__fullWebsite h1{
+
+    color: var(--color-naranja);
+    font-size: 6em;
+
+}
+
+.home .fullWebsite .textBox__fullWebsite p{
+
+    margin-block: 25px;
+    color: var(--color-white);
+    font-size: 2.5em;
+
+}
+
+.home .fullWebsite .textBox__fullWebsite button{
+
+    width: 35%;
+    height: 5vh;
+    background-color: var(--color-naranja);
+    border: var(--color-naranja);
+    color: var(--color-white);
+    font-size: 1.4em;
+
+}
+
+.fullWebsite img{
+
+    width: 38%;
+
+}
 
