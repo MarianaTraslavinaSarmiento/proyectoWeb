@@ -14,7 +14,7 @@ body{
     width: 100%;
     display: grid;
     height: auto;
-    grid-template: 100px repeat(5, 740px) 400px /1fr;
+    grid-template: 100px repeat(5, 740px) 350px /1fr;
     background-color: var(--color-background)
 
 }
@@ -199,20 +199,23 @@ nav ul{
     margin-inline: 50px;
     gap: 30px;
     place-content: center;
+    
 }
 
 .menuGallery .food{
 
     border: 1px solid white;
     background-color: var(--color-beige);
-    height: 50vh;
+    height: 100%;
+    padding: 15px
 
 }
 
 .menuGallery .food img{
 
     margin: 10px;
-    padding: 15px
+    padding: 15px;
+    width: 90%;
 }
 
 .menuGallery .food p:nth-child(2){
@@ -275,5 +278,46 @@ nav ul{
     color: var(--color-white);
     font-size: 1.2vw;
     padding: 10px 20px 10px 20px
+}
+
+/* Seccion quality food */
+
+.qualityFood{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white
+
+}
+
+.qualityFood .container{
+
+    width: 80%;
+    height: 80%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-beige);
+    font-size: 2vw;
+}
+
+.qualityFood .container h2{
+    display: flex;
+    text-align: center;
+    line-height: 8vh;  
+}
+
+.qualityFood .container button{
+
+    width: 15%;
+    height: 5vh;
+    font-size: 1vw;
+    background-color: var(--color-naranja);
+    border: var(--color-naranja);
+    color: var(--color-white)
 }
 
