@@ -8,13 +8,15 @@
     font-family: 'Poppins', sans-serif;
     
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
 
     width: 100%;
     display: grid;
     height: auto;
-    grid-template: 100px repeat(5, 740px) 350px /1fr;
+    grid-template: 100px repeat(5, 40vw) 15vw /1fr;
     background-color: var(--color-background)
 
 }
@@ -29,7 +31,7 @@ header{
 }
 
 header h1{
-    font-size: 3em;
+    font-size: 3vw;
     color: var(--color-naranja);
 }
 
@@ -37,15 +39,19 @@ header nav{
 
     padding-right: 30px;
 }
-header nav ul li{
+header nav ul li {
 
     display: flex;
     list-style: none;
     width: 30vw;
     justify-content: center;
-    font-size: 1.4em;
-    color: var(--color-white);
+    font-size: 1.2vw;
+    font-weight: bold;
     cursor: pointer;
+}
+
+header nav ul li a{
+    color: var(--color-white);
 }
 
 nav ul{
@@ -65,6 +71,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 
 }
 
@@ -76,17 +83,19 @@ nav ul{
 .home .fullWebsite .textBox__fullWebsite h2{
 
     color: var(--color-naranja);
-    font-size: 6em;
+    font-size: 5vw;
 
 }
 
 .home .fullWebsite .textBox__fullWebsite p{
 
-    margin-block: 25px;
     color: var(--color-white);
-    font-size: 2.5em;
-    line-height: 5vh;
+    font-size: 2.2vw;
+}
 
+.home .fullWebsite .textBox__fullWebsite p:nth-child(3){
+
+    margin-bottom: 25px;
 }
 
 .home .fullWebsite .textBox__fullWebsite button{
@@ -96,7 +105,7 @@ nav ul{
     background-color: var(--color-naranja);
     border: var(--color-naranja);
     color: var(--color-white);
-    font-size: 1.4em;
+    font-size: 1vw;
 
 }
 
@@ -113,7 +122,7 @@ nav ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 5vw;
 
 
 }
@@ -132,16 +141,20 @@ nav ul{
 .aboutUs .textBox__aboutUs p:first-child{
 
     color: var(--color-naranja);
-    font-size: 1.7em;
+    font-size: 1.7vw;
     margin-bottom: 15px;
 
 }
 
+.aboutUs .textBox__aboutUs p:nth-child(4){
+
+    color: var(--color-white);
+    font-size: 1.3vw;
+}
 .aboutUs .textBox__aboutUs b{
 
     color: var(--color-white);
-    font-size: 3em;
-    line-height: 5vh;
+    font-size: 3vw;
 
 }
 
@@ -149,7 +162,7 @@ nav ul{
 
     color: var(--color-white);
     margin-top: 15px;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     
 }
 
@@ -161,7 +174,7 @@ nav ul{
     background-color: var(--color-naranja);
     border: var(--color-naranja);
     color: var(--color-white);
-    font-size: 1.4em;
+    font-size: 1vw;
     margin-top: 15px;
 
 }
@@ -178,15 +191,15 @@ nav ul{
 .foodMenu p:first-child{
 
     color: var(--color-naranja);
-    margin-top: 60px;
-    font-size: 1.5em
+    margin-top: 30px;
+    font-size: 2vw
 }
 
 .foodMenu h2{
 
     margin: 15px 0px 30px 0px;
     color: var(--color-white);
-    font-size: 2.5em
+    font-size: 2.5vw
 }
 .menuGallery{
 
@@ -216,13 +229,21 @@ nav ul{
 
 .menuGallery .food p:nth-child(2){
 
-    font-size: 1.5em;
+    font-size: 1.3vw;
 }
 
+.menuGallery .food p:nth-child(3){
+
+    font-size: 1.1vw;
+}
 .menuGallery .food p:nth-child(4){
 
-    color: var(--color-naranja)
+    color: var(--color-naranja);
+    font-size: 1.2vw;
 }
+
+
+
 
 /* Cuarta sección */
 
@@ -236,15 +257,15 @@ nav ul{
 .services p:first-child{
 
     color: var(--color-naranja);
-    margin-top: 60px;
-    font-size: 1.5em
+    margin-top: 30px;
+    font-size: 2vw
 }
 
 .services h2{
 
     margin: 15px 0px 30px 0px;
     color: var(--color-white);
-    font-size: 2.5em
+    font-size: 2.5vw
 }
 .servicesBox{
 
@@ -265,7 +286,6 @@ nav ul{
 
     color: var(--color-naranja);
     font-size: 1.6vw;
-    margin-bottom: 5px;
 }
 
 .nameService p:nth-child(3){
@@ -300,8 +320,7 @@ nav ul{
 
 .qualityFood .container h2{
     display: flex;
-    text-align: center;
-    line-height: 8vh;  
+    text-align: center;  
 }
 
 .qualityFood .container button{
@@ -322,12 +341,11 @@ nav ul{
     justify-content: center;
     align-items: center;
     
-
 }
 
 .item{
 
-    height: 25vh;
+    height: 100%;
     width: 20%;
     display: flex;
     flex-direction: column;
