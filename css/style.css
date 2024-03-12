@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Popins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     
 }
 
@@ -73,7 +73,7 @@ nav ul{
     height: 50%;
 }
 
-.home .fullWebsite .textBox__fullWebsite h1{
+.home .fullWebsite .textBox__fullWebsite h2{
 
     color: var(--color-naranja);
     font-size: 6em;
@@ -85,6 +85,7 @@ nav ul{
     margin-block: 25px;
     color: var(--color-white);
     font-size: 2.5em;
+    line-height: 5vh;
 
 }
 
@@ -99,9 +100,66 @@ nav ul{
 
 }
 
-.fullWebsite img{
 
-    width: 38%;
+/* Segunda sección*/
+
+
+.aboutUs{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px
 
 }
+
+.aboutUs img{
+
+    width: 35%;
+
+}
+
+.aboutUs .textBox__aboutUs{
+    width: 35%;
+    height: 45%;
+}
+
+.aboutUs .textBox__aboutUs p:first-child{
+
+    color: var(--color-naranja);
+    font-size: 1.7em;
+    margin-bottom: 15px;
+
+}
+
+.aboutUs .textBox__aboutUs b{
+
+    color: var(--color-white);
+    font-size: 3em;
+    line-height: 5vh;
+
+}
+
+.textBox__aboutUs :nth-child(3){
+
+    color: var(--color-white);
+    margin-top: 15px;
+    font-size: 1.5em;
+    
+}
+
+
+.aboutUs .textBox__aboutUs button{
+
+    width: 35%;
+    height: 5vh;
+    background-color: var(--color-naranja);
+    border: var(--color-naranja);
+    color: var(--color-white);
+    font-size: 1.4em;
+    margin-top: 15px;
+
+}
+
+/* Tercera sección*/
 
