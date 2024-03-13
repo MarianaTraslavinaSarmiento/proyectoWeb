@@ -36,9 +36,8 @@ aside .menu{
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     padding-block: 10vw;
-    padding-right: 2vw;
 }
 aside .menu .item{
 
@@ -46,7 +45,17 @@ aside .menu .item{
     background-color: #ffc001;
     display: flex;
     align-items: center;
-    height: 5vh;
+    height: 6vh;
+    font-family: Nunito-SemiBold;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+aside .menu .item img{
+
+    width: 2vw;
+ 
 }
 
 aside .menu .item:last-child{
@@ -55,4 +64,87 @@ aside .menu .item:last-child{
     margin-top: 70px;
 }
 
+/* Seccion main */
 
+main{
+
+    background-color: var(--color-backgroundImages);
+
+}
+
+main .title__allProducts{
+
+    padding: 25px 35px 0px 35px;
+    font-family: Nunito-SemiBold;
+    font-size: 1.2vw;
+
+} 
+
+main .clothesGallery{
+
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    padding-inline: 2vw;
+    overflow-y: auto;
+    gap: 1.5vw;
+    padding-block: 1vw;
+    height: 90vh;
+
+}
+
+.clothe{
+
+    height: 40vh;
+    border-radius: 20px;
+}
+
+.clothesGallery .clothe{
+
+    border: 1px solid black;
+    background-color: white;
+}
+
+.clothesGallery .clothe img{
+
+    width: 100%;
+    border-radius: 20px;
+    height: 75%;
+    object-fit: contain;
+}
+
+.clothesGallery .clothe .textClothe{
+
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    height: 24%;
+    padding: 0.5vw;
+    position: relative;
+}
+
+.clothesGallery .clothe .textClothe p:first-child{
+
+    font-family: Nunito-ExtraBold;
+    font-size: 1.2vw;
+    
+}
+
+.clothesGallery .clothe .textClothe p:nth-child(2){
+
+    font-family: Nunito-Regular;
+    color: red;
+    padding-block: 1vh;
+    font-size: 0.9vw;
+
+}
+
+.clothesGallery .clothe .textClothe button{
+
+    position: absolute;
+    right: 0.5vw;
+    width: 30%;
+    height: 3vh;
+    bottom: 1.5vh;
+    border-radius: 10px;
+    
+}
