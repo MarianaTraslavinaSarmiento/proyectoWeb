@@ -1,3 +1,6 @@
+@import url(variables.css);
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,4 +8,51 @@
     box-sizing: border-box;
     
 }
+
+body{
+
+    background-color: var(--color-background);
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+    padding: 30px;
+
+
+}
+
+header img{
+
+    width: 15vw;
+    margin-top: 15px
+}
+
+main{
+
+    background-color: pink;
+    border-radius: 20px;
+}
+
+aside .menu{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 10vw;
+    padding-right: 2vw;
+}
+aside .menu .item{
+
+    font-size: 1.2vw;
+    background-color: #ffc001;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+aside .menu .item:last-child{
+
+    background-color: aquamarine;
+    margin-top: 70px;
+}
+
 
