@@ -772,7 +772,7 @@ nav ul{
     .item{
 
         height: auto;
-        width: 95%;
+        width: 80%;
         display: flex;
     }
 
@@ -810,9 +810,20 @@ nav ul{
         
     }
 
+    .itemCircle{
+
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .itemCircle h3{
         font-size: 7vw;
-        color: var(--color-white)
+        color: var(--color-white);
+
+        
     }
 
     .circulos{
@@ -820,7 +831,6 @@ nav ul{
         display: flex;
         gap: 10px;
         color: var(--color-naranja);
-        justify-content: center;  
        
     }
 
