@@ -410,5 +410,307 @@ circulo{
     width: 1.5vw;
     height: 1.5vw;
     border-radius: 100%;
+}
+
+/* Responsive para celular */
+
+@media (max-width: 767px){
+
+    body{
+        grid-template: 80px 70vh 85vh 140vh 160vh 70vh 15vw /1fr;
+        width: 100vw;
+    }
+
+    header, section{
+
+        width: 100vw;
+    }
+
+    header{
+
+        padding:15px;
+        
+    }
+
+    header h1{
+        font-size: 8vw;
+        color: var(--color-naranja);
+        margin-left: 0px;
+    }
+
+    header nav{
+        padding-right: 0px;
+    }
+
+    header nav ul li {
+
+        display: flex;
+        list-style: none;
+        width: 30vw;
+        height: auto;
+        justify-content: center;
+        font-size: 1.2vw;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    header nav ul li a{
+        color: var(--color-white);
+        transition: 0.4s;
+    }
+
+    header nav ul li a:hover{
+
+        color: var(--color-naranja);
+        
+    }
+
+    nav ul{
+
+        display: flex;
+        height: 100px;
+        width: 30vw;
+        align-items: center;
+
+    }
+
+     
+/* Primera seccion */
+
+
+    .home .fullWebsite{
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100vw;
+    }
+    
+    .fullWebsite .textBox__fullWebsite{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home .fullWebsite .textBox__fullWebsite h2{
+        font-size: 13vw;
+        text-align: center;
+    }
+    
+    .home .fullWebsite .textBox__fullWebsite p{
+    
+        color: var(--color-white);
+        font-size: 6vw;
+        line-height: 3vh;
+        
+    }
+    
+    .home .fullWebsite .textBox__fullWebsite p:nth-child(3){
+    
+        margin-bottom: 25px;
+    }
+    
+    .home .fullWebsite .textBox__fullWebsite button{
+    
+        width: 45%;
+        height: 5vh;
+        background-color: var(--color-naranja);
+        border: var(--color-naranja);
+        color: var(--color-white);
+        font-size: 5vw;
+    
+    }
+
+    .home .fullWebsite .textBox__fullWebsite button:hover{
+
+        scale: 1;
+
+    }
+    
+    .home .fullWebsite img{
+    
+        width: 90%;
+    }
+    
+    /* About us*/
+
+    .aboutUs{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 5vw;
+        position: relative;
+    }
+    
+    .aboutUs img{
+    
+        width: 80%;
+        position: absolute;
+        top: 45vh
+    
+    }
+    
+    .aboutUs .textBox__aboutUs{
+        width: 100vw;
+        height: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aboutUs .textBox__aboutUs p:first-child{
+        color: var(--color-naranja);
+        font-size: 5vw;
+        margin-top: 50px;
+
+    }
+    
+    .aboutUs .textBox__aboutUs p:nth-child(4){
+        color: var(--color-white);
+        font-size: 5vw;
+        margin-top: 15px
+    }
+
+    .aboutUs .textBox__aboutUs b{
+        color: var(--color-white);
+        font-size: 8vw;
+        
+    }
+    
+    .textBox__aboutUs :nth-child(3){
+    
+        color: var(--color-white);
+        margin-top: 0px;
+        font-size: 1.3vw;
+        
+    }
+    
+    .aboutUs .textBox__aboutUs button{
+    
+        width: 35%;
+        height: 5vh;
+        background-color: var(--color-naranja);
+        border: var(--color-naranja);
+        font-size: 5vw;
+        margin-top: 15px;
+    
+    }
+    
+    .aboutUs .textBox__aboutUs button:hover{
+
+        scale: 1
+    }
+
+/* Tercera sección */
+
+    .foodMenu{
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foodMenu p:first-child{
+
+        margin-top: 30px;
+        font-size: 5vw
+    }
+
+    .foodMenu h2{
+
+        margin: 15px 0px 15px 0px;
+        font-size: 8vw
+    }
+    .menuGallery{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-inline: 0px;
+        gap: 30px;
+        place-content: center;
+        padding-inline: 30px
+        
+    }
+
+    .menuGallery .food{
+
+        height: 100%;
+        padding: 15px
+
+    }
+
+    .menuGallery .food img{
+
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+    }
+
+    .menuGallery .food p:nth-child(2){
+
+        font-size: 6vw;
+    }
+
+    .menuGallery .food p:nth-child(3){
+
+        font-size: 5vw;
+    }
+    .menuGallery .food p:nth-child(4){
+
+        font-size: 5vw;
+    }
+
+/* Services */
+
+
+
+    .services p:first-child{
+        margin-top: 30px;
+        font-size: 5vw
+    }
+
+    .services h2{
+
+        padding-inline: 40px;
+        margin-block: 5px;
+        font-size: 8vw
+    }
+    .servicesBox{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-inline: 40px;
+        gap: 40px;
+    }
+
+    .nameService{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nameService img{
+        width: 70%;
+    }
+
+    .nameService b:nth-child(2){
+        color: var(--color-naranja);
+        font-size: 6vw;
+    }
+
+    .nameService p:nth-child(3){
+        font-size: 5vw;
+        padding: 10px 20px 10px 20px
+    }
+
+/* Quality foods */
+
+
 
 }
