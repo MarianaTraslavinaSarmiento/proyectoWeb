@@ -355,7 +355,6 @@ nav ul{
 
     display: flex;
     justify-content: center;
-    align-items: center;
     
 }
 
@@ -398,32 +397,51 @@ nav ul{
     
 }
 
-.item .circulos{
+.itemCircle{
 
+    width: 10%;
+}
+
+.itemCircle h3{
+
+    color: var(--color-white);
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+
+.lineaContact{
+
+    height: 2px;
+    width: 40%;
+    background-color: var(--color-naranja);
+}
+
+.circulos{
+
+    color: var(--color-naranja);
     display: flex;
     gap: 10px
+
 }
 
-circulo{
-
-    background-color: var(--color-naranja);
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 100%;
-}
 
 /* Responsive para celular */
 
 @media (max-width: 767px){
 
     body{
-        grid-template: 80px 70vh 85vh 140vh 160vh 70vh 15vw /1fr;
+        grid-template: 80px 70vh 85vh 140vh 155vh 30vh 95vh /1fr;
         width: 100vw;
+        gap: 15vw
     }
 
     header, section{
 
-        width: 100vw;
+        max-width: 100vw;
     }
 
     header{
@@ -592,8 +610,6 @@ circulo{
     
         width: 35%;
         height: 5vh;
-        background-color: var(--color-naranja);
-        border: var(--color-naranja);
         font-size: 5vw;
         margin-top: 15px;
     
@@ -615,7 +631,7 @@ circulo{
 
     .foodMenu p:first-child{
 
-        margin-top: 30px;
+        margin-top: 0px;
         font-size: 5vw
     }
 
@@ -669,7 +685,7 @@ circulo{
 
 
     .services p:first-child{
-        margin-top: 30px;
+        margin-top: 0px;
         font-size: 5vw
     }
 
@@ -700,7 +716,6 @@ circulo{
     }
 
     .nameService b:nth-child(2){
-        color: var(--color-naranja);
         font-size: 6vw;
     }
 
@@ -711,6 +726,102 @@ circulo{
 
 /* Quality foods */
 
+    .qualityFood{
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .qualityFood .container{
+
+        width: 85%;
+        height: 90%;
+        display: flex;
+        gap: 35px;
+        font-size: 4vw;
+        line-height: 3vh;
+        padding: 10px;
+    }
+
+    .qualityFood .container h2{
+        display: flex;
+        text-align: center;  
+    }
+
+    .qualityFood .container button{
+
+        width: 30%;
+        height: 5vh;
+        font-size: 3vw;
+
+    }
+
+    /* Footer */
+
+    .footer{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        
+    }
+
+    .item{
+
+        height: auto;
+        width: 95%;
+        display: flex;
+    }
+
+    .item:last-child{
+        width: 10%;
+    }
+
+    .linea{
+
+        height: 4px;
+        width: 20%;
+        background-color: var(--color-naranja);
+    }
+
+    .lineaContact{
+
+        height: 4px;
+        width: 40%;
+        background-color: var(--color-naranja);
+    }
+    .item h3{
+
+        font-size: 7vw;
+
+    }
+
+    .item ul, .circulos{
+        margin-top: 15px
+    }
+
+
+    .item ul li{
+
+        font-size: 4vw;
+        
+    }
+
+    .itemCircle h3{
+        font-size: 7vw;
+        color: var(--color-white)
+    }
+
+    .circulos{
+
+        display: flex;
+        gap: 10px;
+        color: var(--color-naranja);
+        justify-content: center;  
+       
+    }
 
 }
