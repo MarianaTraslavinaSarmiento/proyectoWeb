@@ -93,9 +93,24 @@ main .clothesGallery{
 
 .clothe{
 
-    height: 38vh;
+    height: 39vh;
     border-radius: 20px;
+    position: relative
 
+}
+
+.clothe img{
+    position: absolute;
+}
+
+.clothe img:nth-child(2){
+
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+.clothe img:nth-child(2):hover{
+    opacity: 1;
 }
 
 .clothesGallery .clothe{
@@ -119,7 +134,8 @@ main .clothesGallery{
     border-radius: 20px;
     height: 24%;
     padding: 0.5vw;
-    position: relative;
+    position: absolute;
+    bottom: 0;
 }
 
 .clothesGallery .clothe .textClothe p:first-child{
