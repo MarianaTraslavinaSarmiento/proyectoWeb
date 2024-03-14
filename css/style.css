@@ -28,8 +28,11 @@ header img{
 
 main{
 
-    background-color: pink;
+    border: 1px solid black;
     border-radius: 20px;
+    height: 100%;
+    overflow: hidden;
+    
 }
 
 aside .menu{
@@ -66,11 +69,6 @@ aside .menu .item:last-child{
 
 /* Seccion main */
 
-main{
-
-    background-color: var(--color-backgroundImages);
-
-}
 
 main .title__allProducts{
 
@@ -85,17 +83,19 @@ main .clothesGallery{
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
     padding-inline: 2vw;
+    padding-block: 2vw;
     overflow-y: auto;
     gap: 1.5vw;
     padding-block: 1vw;
-    height: 90vh;
+    height: 90%;
 
 }
 
 .clothe{
 
-    height: 40vh;
+    height: 38vh;
     border-radius: 20px;
+
 }
 
 .clothesGallery .clothe{

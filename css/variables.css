@@ -14,11 +14,10 @@
 }
 
 :root {
-    --color-orange: #ff702a;
-    --color-white: #ffff;
-    --color-background: #e5e5e5;
-    --color-backgroundImages: #f5f3f3;
-    --color-beige: #ffefe8;
-    --color-responsive: #2c2b47;
-
+    --color-peach: #FDB05E;
+    --color-green: #4C5F1C;
+    --color-darkGreen: #0B1E03;
+    --color-tangerine: #F75A00;
+    --color-redOrange: #D41D01;
+    
 }
