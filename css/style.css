@@ -11,12 +11,11 @@
 
 body{
 
-    background-color: white;
     height: 100vh;
     display: grid;
     grid-template: 1fr / 1fr 4fr;
     padding: 30px;
-    background-color: var(--color-white);
+    background-color: var(--color-grayclaro);
 
 
 }
@@ -30,15 +29,9 @@ body{
     color: #1f1e1e
 }
 
-header h1{
+header img{
 
-    font-size: 2.3vw;
-    margin-top: 15px;
-    margin-left: 20px;
-    font-family: Nunito-ExtraBold;
-    color: var(--color-white);
-    text-shadow: 0px 0px 5px var(--color-darkPurple);
-
+    width: 90%;
 }
 
 main{
@@ -47,10 +40,10 @@ main{
     border-radius: 20px;
     height: 100%;
     overflow: hidden;
-    background-color: var(--color-lightwhite);
+    background-color: var(--color-white);
+    z-index: 10;
     
 }
-
 
 aside .menu{
 
@@ -73,7 +66,9 @@ aside .menu .item{
 
 aside .menu .item:hover{
     scale: 1;
-    background-color: var(--color-purple) 
+    background-color: var(--color-yellow);
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 5px var(--color-yellow)) 
 }
 aside .menu .item img{
 
@@ -89,8 +84,10 @@ aside .menu .item:last-child{
 aside .menu .item:last-child:hover{
 
     background-color: var(--color-gray);
+    filter: drop-shadow(0px 0px 5px var(--color-gray)); 
 
 }
+
 
 /* Seccion main */
 
@@ -119,11 +116,12 @@ main .clothesGallery{
 .clothe{
 
     height: 39vh;
-    border-radius: 20px;
+    border-radius: 0px 20px;
     position: relative;
     box-shadow: 0px 0px 10px var(--color-darkGray);
     background-color: white;
     transition: 0.5s;
+    border: 1px solid var(--color-black)
 
 }
 
@@ -165,26 +163,26 @@ main .clothesGallery{
 .clothesGallery .clothe .textClothe{
 
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0px 20px;
     height: 25%;
     padding: 0.5vw;
     position: absolute;
     bottom: 0px;
-    background-color: var(--color-gray);
+    background-color: var(--color-black);
 }
 
 .clothesGallery .clothe .textClothe p:first-child{
 
     font-family: Nunito-ExtraBold;
     font-size: 1.2vw;
-    color: var(--color-campus)
+    color: var(--color-white)
     
 }
 
 .clothesGallery .clothe .textClothe p:nth-child(2){
 
     font-family: Nunito-Regular;
-    color: var(--color-campus);
+    color: var(--color-white);
     padding-block: 1vh;
     font-size: 0.9vw;
 
@@ -198,13 +196,14 @@ main .clothesGallery{
     height: 3vh;
     bottom: 1.5vh;
     border-radius: 10px;
-    background-color: var(--color-darkGray);
-    border: var(--color-purple);
+    background-color: var(--color-yellow);
+    border: var(--color-yellow);
     font-size: 0.8vw;
     
 }
 
 .clothesGallery .clothe .textClothe button:hover{
 
-    box-shadow: 0px 0px 10px var(--color-darkPurple);
+    box-shadow: 0px 0px 10px var(--color-yellow);
 }
+

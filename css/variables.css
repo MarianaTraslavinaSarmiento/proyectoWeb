@@ -14,14 +14,11 @@
 }
 
 :root {
-    --color-sky: #E2F0FF;
-    --color-purple: #b3a9ff;
-    --color-gray: #ccd4da;
-    --color-white: #e9e5e5;
-    --color-darkPurple: #6451FC;
-    --color-campus: #190e6b;
-    --color-darkGray: #b9bdc0;
-    --color-lila: #bfb8fa;
-    --color-lightwhite: #ffff;
+    --color-yellow: #fac014;
+    --color-black: #1f1f20;
+    --color-white: #ffff;
+    --color-gray:#979797;
+    --color-grayclaro: #f8f6f6;
+    
 
 }
