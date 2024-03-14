@@ -6,6 +6,8 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: "Poppins";
+    
     
 }
 
@@ -75,10 +77,10 @@ aside .menu .item{
     display: flex;
     align-items: center;
     height: 6vh;
-    font-family: Nunito-SemiBold;
     padding: 15px;
     gap: 10px;
     border-radius: 15px 0px 0px 15px;
+    position: relative
 }
 
 aside .menu .item:hover{
@@ -112,7 +114,6 @@ aside .menu .item:last-child:hover{
 main .title__allProducts{
 
     padding: 25px 35px 0px 35px;
-    font-family: Nunito-SemiBold;
     font-size: 1.2vw;
 
 } 
@@ -120,11 +121,12 @@ main .title__allProducts{
 main .clothesGallery{
 
     display: grid;
-    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+    /* grid-template: repeat(5, 1fr) / repeat(4, 1fr); */
     padding-inline: 2vw;
     padding-block: 2vw;
     overflow-y: auto;
-    gap: 1.5vw;
+    gap: 30px;
     padding-block: 1vw;
     height: 90%;
 
@@ -190,7 +192,6 @@ main .clothesGallery{
 
 .clothesGallery .clothe .textClothe p:first-child{
 
-    font-family: Nunito-ExtraBold;
     font-size: 1.2vw;
     color: var(--color-white)
     
@@ -198,7 +199,6 @@ main .clothesGallery{
 
 .clothesGallery .clothe .textClothe p:nth-child(2){
 
-    font-family: Nunito-Regular;
     color: var(--color-white);
     padding-block: 1vh;
     font-size: 0.9vw;
@@ -266,7 +266,7 @@ main .ordered__products{
 .property p{
 
     font-size: 1.3vw;
-    font-family: Nunito-SemiBold;
+
     
 }
 
@@ -292,7 +292,6 @@ main .ordered__products{
     padding-block: 1vw;
     position: relative;
     height: 18vh;
-    font-family: Nunito-SemiBold;
     display: flex;
     justify-content: space-between;
 
@@ -308,6 +307,7 @@ main .ordered__products{
     justify-content: center;
     border-radius: 10px;
     font-size: 1.3vw;
+    color: var(--color-black)
 
 }
 
@@ -339,6 +339,22 @@ main .ordered__products{
     border-radius: 10px;
     font-size: 1vw;
     color: var(--color-white)
+}
+
+main .mensaje{
+
+    padding: 1.7vw;
+    font-size: 1vw;
+}
+
+.item :nth-child(3){
+
+    background-color: var(--color-yellow);
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    right: 3vw;
 
 
 }
