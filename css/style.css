@@ -207,3 +207,121 @@ main .clothesGallery{
     box-shadow: 0px 0px 10px var(--color-yellow);
 }
 
+/*Carrito*/
+
+main .ordered__products{
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    height: 70%;
+    padding: 1vw 2vw 1vw 2vw;
+    gap: 0.5vw;
+    border-radius: 20px;
+    
+}
+
+.product{
+
+    display: grid;
+    grid-template: 1fr / 15vw repeat(4, 1fr) 6vw;
+    border-radius: 20px;
+    border: 1px solid var(--color-black);
+    height: 100%;
+
+}
+
+.property{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5vw
+}
+
+.property img{
+
+    width: 70%;
+    display: flex;
+    margin: auto
+
+}
+
+.property p{
+
+    font-size: 1.3vw;
+    font-family: Nunito-SemiBold;
+    
+}
+
+
+.ordered__products .product .property:nth-child(3) p:nth-child(2) {
+    width: 60%;
+    border: 1px solid black;
+    align-self: center;
+}
+
+.property svg{
+
+    width: 40%;
+    height: 70%;
+    cursor: pointer;
+}
+
+
+.register{
+
+    width: 95%;
+    margin: 0vw 2vw 1vw 2vw;
+    padding-block: 1vw;
+    position: relative;
+    height: 18vh;
+    font-family: Nunito-SemiBold;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.register .emptyCar{
+
+    background-color: var(--color-yellow);
+    width: 20%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 1.3vw;
+
+}
+
+.buyNow{
+
+    height: 70%;
+    width: 30%;
+    font-size: 1.3vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw;
+    right: 0.5vw;
+    background-color: var(--color-grayclaro);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--color-gray);
+}
+
+.buyNow button{
+
+    position: absolute;
+    width: 50%;
+    right: 1vw;
+    bottom: 1vw;
+    height: 6vh;
+    background-color: var(--color-black);
+    border: var(--color-black);
+    border-radius: 10px;
+    font-size: 1vw;
+    color: var(--color-white)
+
+
+}
