@@ -11,29 +11,46 @@
 
 body{
 
-    background-color: var(--color-background);
+    background-color: white;
     height: 100vh;
     display: grid;
     grid-template: 1fr / 1fr 4fr;
     padding: 30px;
+    background-color: var(--color-white);
 
 
 }
 
-header img{
+.menu a{
 
-    width: 15vw;
-    margin-top: 15px
+    color: #1f1e1e
+}
+
+.menu a img{
+    color: #1f1e1e
+}
+
+header h1{
+
+    font-size: 2.3vw;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: Nunito-ExtraBold;
+    color: var(--color-white);
+    text-shadow: 0px 0px 5px var(--color-darkPurple);
+
 }
 
 main{
 
-    border: 1px solid black;
+    box-shadow: 0px 0px 15px var(--color-gray);
     border-radius: 20px;
     height: 100%;
     overflow: hidden;
+    background-color: var(--color-lightwhite);
     
 }
+
 
 aside .menu{
 
@@ -45,7 +62,6 @@ aside .menu{
 aside .menu .item{
 
     font-size: 1.2vw;
-    background-color: #ffc001;
     display: flex;
     align-items: center;
     height: 6vh;
@@ -55,6 +71,10 @@ aside .menu .item{
     border-radius: 15px 0px 0px 15px;
 }
 
+aside .menu .item:hover{
+    scale: 1;
+    background-color: var(--color-purple) 
+}
 aside .menu .item img{
 
     width: 2vw;
@@ -63,8 +83,13 @@ aside .menu .item img{
 
 aside .menu .item:last-child{
 
-    background-color: aquamarine;
     margin-top: 70px;
+}
+
+aside .menu .item:last-child:hover{
+
+    background-color: var(--color-gray);
+
 }
 
 /* Seccion main */
@@ -95,8 +120,19 @@ main .clothesGallery{
 
     height: 39vh;
     border-radius: 20px;
-    position: relative
+    position: relative;
+    box-shadow: 0px 0px 10px var(--color-darkGray);
+    background-color: white;
+    transition: 0.5s;
 
+}
+
+.clothe:hover{
+
+    scale: 1.05;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-gray);
+    
 }
 
 .clothe img{
@@ -113,11 +149,10 @@ main .clothesGallery{
     opacity: 1;
 }
 
-.clothesGallery .clothe{
-
-    border: 1px solid black;
-    background-color: white;
+.clothe img:nth-child(2):hover + .clothe img:nth-child(1):hover{
+    opacity: 0;
 }
+
 
 .clothesGallery .clothe img{
 
@@ -129,26 +164,27 @@ main .clothesGallery{
 
 .clothesGallery .clothe .textClothe{
 
-    border: 1px solid black;
     width: 100%;
     border-radius: 20px;
-    height: 24%;
+    height: 25%;
     padding: 0.5vw;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    background-color: var(--color-gray);
 }
 
 .clothesGallery .clothe .textClothe p:first-child{
 
     font-family: Nunito-ExtraBold;
     font-size: 1.2vw;
+    color: var(--color-campus)
     
 }
 
 .clothesGallery .clothe .textClothe p:nth-child(2){
 
     font-family: Nunito-Regular;
-    color: red;
+    color: var(--color-campus);
     padding-block: 1vh;
     font-size: 0.9vw;
 
@@ -162,5 +198,13 @@ main .clothesGallery{
     height: 3vh;
     bottom: 1.5vh;
     border-radius: 10px;
+    background-color: var(--color-darkGray);
+    border: var(--color-purple);
+    font-size: 0.8vw;
     
+}
+
+.clothesGallery .clothe .textClothe button:hover{
+
+    box-shadow: 0px 0px 10px var(--color-darkPurple);
 }
