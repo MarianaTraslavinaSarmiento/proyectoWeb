@@ -421,6 +421,10 @@ main .mensaje{
         border-radius: 0px;
     }
 
+    main .mensaje{
+
+        font-size: 4vw;
+    }
     .title__allProducts h1{
 
         font-size: 2rem;
@@ -596,5 +600,8 @@ main .mensaje{
         position: absolute;
         right: 3vw;
     }
+
+
+
 
 }
