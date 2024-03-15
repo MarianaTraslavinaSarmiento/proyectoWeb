@@ -194,7 +194,7 @@ main .clothesGallery{
     width: 100%;
     border-radius: 0px 20px;
     height: 25%;
-    padding: 0.5vw;
+    padding: 10px;
     position: absolute;
     bottom: 0px;
     background-color: var(--color-black);
@@ -387,7 +387,8 @@ main .mensaje{
 
         display: block;
         font-size: 2.6rem;
-
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: var(--color-yellow);
     }
 
     header img{
@@ -412,7 +413,6 @@ main .mensaje{
 
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 100%;
         height: 100vh;
         border-radius: 0px;
@@ -444,6 +444,7 @@ main .mensaje{
     .clothesGallery .clothe .textClothe button{
 
         font-size: 1rem;
+        right: 10px;
         
     }
 
@@ -524,7 +525,8 @@ main .mensaje{
     
     
     .register{
-    
+        position: absolute;
+        bottom: 1rem;
         width: 95%;
         margin: 0vw 2vw 1vw 2vw;
         padding-block: 1vw;
@@ -581,11 +583,6 @@ main .mensaje{
         color: var(--color-white)
     }
     
-    main .mensaje{
-    
-        padding: 1.7vw;
-        font-size: 1vw;
-    }
     
     .item :nth-child(3){
     
