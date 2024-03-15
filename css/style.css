@@ -439,7 +439,7 @@ nav ul{
 @media (max-width: 767px){
 
     body{
-        grid-template: 80px 70vh 85vh 140vh 155vh 30vh 95vh /1fr;
+        grid-template-rows: 1fr 5fr 6fr;
         width: 100vw;
         gap: 15vw
     }
@@ -581,7 +581,6 @@ nav ul{
     
         color: var(--color-white);
         font-size: 6vw;
-        line-height: 3vh;
         
     }
     
@@ -625,9 +624,10 @@ nav ul{
     
     .aboutUs img{
     
-        width: 80%;
+        height: 40%;
+        width: auto;
         position: absolute;
-        top: 45vh
+        bottom: 0
     
     }
     
@@ -802,7 +802,6 @@ nav ul{
         display: flex;
         gap: 35px;
         font-size: 4vw;
-        line-height: 3vh;
         padding: 10px;
     }
 
