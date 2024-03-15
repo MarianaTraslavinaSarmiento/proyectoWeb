@@ -105,17 +105,20 @@ aside .menu .item img{
  
 }
 
-aside .menu .item:last-child{
+aside .menu .item:nth-child(5){
 
-    margin-top: 70px;
+    margin-block: 100px;
 }
 
-aside .menu .item:last-child:hover{
+
+
+aside .menu .item:nth-child(5):hover{
 
     background-color: var(--color-gray);
     filter: drop-shadow(0px 0px 5px var(--color-gray)); 
 
 }
+ 
 
 
 /* Seccion main */
